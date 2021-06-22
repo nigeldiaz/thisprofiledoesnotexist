@@ -28,6 +28,9 @@ const lastNames = ["Thatcher", "Johnston", "Grayson", "Thorne", "Clarke", "Lee",
     "Brahms", "Wallis", "Sheppard", "McCowan", "Lawrence", "McGregor", "Torrance", "Sheldon", 
     "Wilkes", "Cameron", "Decovon", "Bennigan", "Benavidez", "Williams", "Butler", "Burriss", 
     "Fabito", "Davenport", "Marquez", "Dankworth", "MacQuoid", "Featheringham", "Javernick"];
+const profilePictures = ["profilepic01.jpg", "profilepic02.jpg", "profilepic03.jpg", "profilepic04.jpg", 
+    "profilepic05.jpg", "profilepic06.jpg", "profilepic07.jpg", "profilepic08.jpg", "profilepic09.jpg", 
+    "profilepic10.jpg", "profilepic11.jpg", "profilepic12.jpg"];
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", 
     "September", "October", "November", "December"]; 
 const quebecCities = ["Montréal", "Québec City"];
@@ -84,6 +87,12 @@ var select = function(array) {
     let num = randomNum(min, max);
     return array[num];
 }
+//generates and returns profile pic
+var generateProfilePic = function() {
+    return "assets/img/"+select(profilePictures);
+}
+//declare variable for profile pic
+const profilePic = generateProfilePic();
 //ensures correct articles are used in a sentence
 var grammarCheck = function(sentence, keyWord) {
     keyWord = keyWord.toLowerCase();
@@ -302,6 +311,8 @@ const description = generateDescription();
 //loads web page
 var loadPage = function() {
     document.getElementById("name").innerHTML = firstName+" "+lastName;
+    document.getElementById("profilePic").src = profilePic;
+    //document.getElementById("profilePic").src = "https://www.thispersondoesnotexist.com/image";
     document.getElementById("description").innerHTML = description;
     document.getElementById("dateOfBirth").innerHTML = dateOfBirth;
     document.getElementById("age").innerHTML = age+" years old";
