@@ -1,0 +1,12 @@
+.allPage {
+  width: 930px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 45px;
+  padding: 50px;
+}
+  
+img {
+  border-radius: 50%;
+  height: 300px;
+}

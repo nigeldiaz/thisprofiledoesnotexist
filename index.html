@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+    Created by: Nigel Diaz
+    Created on: June 10, 2021
+    Last updated on: June 21, 2021 
+-->
+<html lang="en">
+    <head>
+        <meta content="en-us" http-equiv="Content-Language">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+        <title>This Profile Does Not Exist</title>
+        <meta content="Nigel Diaz, this profile does not exist, fake profile generator" name="keywords">
+        <meta content="This is an app that generates fake profiles that do not exist." name="description">
+        <link media="only screen and (min-width:1024px)" href="assets/css/profilestyles.css" rel="stylesheet" type="text/css">
+        <link media="only screen and (max-width:1024px)" href="assets/css/profilemobilestyles.css" rel="stylesheet" type="text/css">
+        <link media="print" href="assets/css/profilestyles.css" rel="stylesheet" type="text/css">
+    </head>
+    <body class="allPage">
+        <img id="profilePic" src="https://www.thispersondoesnotexist.com/image" alt="generated profile pic" />
+        <h1 id="name"></h1>
+        <p id="description"></p>
+        <table>
+            <th>Personal Info: </th>
+            <tr>
+                <td>Date of Birth: </td>
+                <td id="dateOfBirth"></td>
+            </tr>
+            <tr>
+                <td>Age: </td>
+                <td id="age"></td>
+            </tr>
+            <tr>
+                <td>Lives in: </td>
+                <td id="address"></td>
+            </tr>
+        </table>   
+        <br/>     
+        <table>
+            <th>Contact Info: </th>
+            <tr>
+                <td>Phone#: </td>
+                <td>
+                    <a id="phoneNumLink" href="#">
+                        <div id="phoneNum"></div>
+                    </a>
+                </td>                
+            </tr>
+            <tr>
+                <td>Email: </td>
+                <td>
+                    <a id="emailLink" href="#">
+                        <div id="email"></div>
+                    </a>
+                </td>                
+            </tr>            
+        </table>
+
+    </body>
+    <script src="assets/js/profilegenerator.js"></script>
+</html>
