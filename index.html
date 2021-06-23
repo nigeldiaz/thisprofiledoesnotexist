@@ -15,46 +15,47 @@
         <link media="only screen and (max-width:1024px)" href="assets/css/profilemobilestyles.css" rel="stylesheet" type="text/css">
         <link media="print" href="assets/css/profilestyles.css" rel="stylesheet" type="text/css">
     </head>
-    <body class="allPage">
-        <img id="profilePic" src="assets/img/profilepic03.jpg" alt="generated profile pic" />
-        <h1 id="name"></h1>
-        <p id="description"></p>
-        <table>
-            <th>Personal Info: </th>
-            <tr>
-                <td>Date of Birth: </td>
-                <td id="dateOfBirth"></td>
-            </tr>
-            <tr>
-                <td>Age: </td>
-                <td id="age"></td>
-            </tr>
-            <tr>
-                <td>Lives in: </td>
-                <td id="address"></td>
-            </tr>
-        </table>   
-        <br/>     
-        <table>
-            <th>Contact Info: </th>
-            <tr>
-                <td>Phone#: </td>
-                <td>
-                    <a id="phoneNumLink" href="#">
-                        <div id="phoneNum"></div>
-                    </a>
-                </td>                
-            </tr>
-            <tr>
-                <td>Email: </td>
-                <td>
-                    <a id="emailLink" href="#">
-                        <div id="email"></div>
-                    </a>
-                </td>                
-            </tr>            
-        </table>
-
+    <body>
+        <div id="allPage">
+            <img id="profilePic" src="assets/img/profilepic03.jpg" alt="generated profile pic" />
+            <h1 id="name"></h1>
+            <p id="description"></p>
+            <div class="section">Personal Info </div>        
+            <table>
+                <tr>
+                    <td>Date of Birth: </td>
+                    <td id="dateOfBirth"></td>
+                </tr>
+                <tr>
+                    <td>Age: </td>
+                    <td id="age"></td>
+                </tr>
+                <tr>
+                    <td>Lives in: </td>
+                    <td id="address"></td>
+                </tr>
+            </table>   
+            <br/>     
+            <div class="section">Contact Info </div>   
+            <table>
+                <tr>
+                    <td>Phone#: </td>
+                    <td>
+                        <a id="phoneNumLink" href="#">
+                            <div id="phoneNum"></div>
+                        </a>
+                    </td>                
+                </tr>
+                <tr>
+                    <td>Email: </td>
+                    <td>
+                        <a id="emailLink" href="#">
+                            <div id="email"></div>
+                        </a>
+                    </td>                
+                </tr>            
+            </table>
+        </div>
     </body>
     <script src="assets/js/profilegenerator.js"></script>
 </html>

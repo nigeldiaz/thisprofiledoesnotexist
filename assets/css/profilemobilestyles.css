@@ -1,13 +1,37 @@
-.allPage {
+#allPage {
   width: 930px;
   margin-right: auto;
   margin-left: auto;
   font-size: 45px;
   padding: 50px;
+  background-color: whitesmoke;
+}
+
+#name, #description {
+  text-align: center;
+}
+
+.section {
+  font-weight: bold;
+  padding: 3px;
   background-color: lightsteelblue;
+  text-align: center;
+}
+  
+body {
+  background-color: lightsteelblue;
+  margin: 0px;
 }
   
 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;  
   border-radius: 50%;
   height: 300px;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
 }
