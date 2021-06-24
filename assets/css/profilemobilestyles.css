@@ -3,7 +3,7 @@
   margin-right: auto;
   margin-left: auto;
   font-size: 45px;
-  padding: 50px;
+  padding: 30px;
   background-color: whitesmoke;
 }
 
@@ -19,7 +19,7 @@
 }
   
 body {
-  background-color: lightsteelblue;
+  background-color: whitesmoke;
   margin: 0px;
 }
   
@@ -34,4 +34,21 @@ img {
 table {
   margin-left: auto;
   margin-right: auto;
+}
+
+hr {
+  border-style: solid;
+  border-color: lightsteelblue;
+  background-color: lightsteelblue;
+  height: 1px;
+}
+
+footer {
+  width: 930px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: x-large;
+  padding: 25px;
+  background-color: whitesmoke;
+  color: grey;
 }
