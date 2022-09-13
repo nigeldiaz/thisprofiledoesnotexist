@@ -1,7 +1,7 @@
 /* 
     Created by: Nigel Diaz
     Created on: June 10, 2021
-    Last updated on: June 21, 2021
+    Last updated on: September 12, 2022
 */
 //declaration of global variables
 const firstNames = ["Olivia", "Emma", "Charlotte", "Liam", "Aiden", "Elijah", "Oliver", 
@@ -260,8 +260,7 @@ var sentence2 = function() {
     if(option === 0) {
         return "My hobbies are "+generateHobbies()+". ";
     } else if(option === 1) {
-        return "I like to " +" ".concat(generateHobbies().concat(" ")).replace('ing', '').replace('ing', '')
-            .replace('ing', '').replace('ing', '').replace('ing', '').replace(' s,', ' sing,')
+        return "I like to " +" ".concat(generateHobbies().concat(" ")).replace(/ing/g, '').replace(' s,', ' sing,')
             .replace('and s ', 'and sing ').replace(' s and', ' sing and')+ " during my spare time. ";
     } else if(option === 2) {
         return "I really enjoy "+generateHobbies()+". ";
