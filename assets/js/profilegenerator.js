@@ -260,8 +260,8 @@ var sentence2 = function() {
     if(option === 0) {
         return "My hobbies are "+generateHobbies()+". ";
     } else if(option === 1) {
-        return "I like to " +" ".concat(generateHobbies().concat(" ")).replace(/ing/g, '').replace(' s,', ' sing,')
-            .replace('and s ', 'and sing ').replace(' s and', ' sing and')+ " during my spare time. ";
+        return "I like to " +" ".concat(generateHobbies().concat(" ")).replace(/ing/g, '').replace(/ s,| s /, ' sing,')
+        + " during my spare time. ";
     } else if(option === 2) {
         return "I really enjoy "+generateHobbies()+". ";
     } else if(option === 3) {
